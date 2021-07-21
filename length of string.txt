@@ -1,0 +1,14 @@
+To find length of string
+#include <stdio.h>
+int main() {
+    char s[5]="hello";
+    int l;
+    puts(s);
+    l=strlen(s);
+    printf("%d",l);
+    return 0;
+}
+
+OUTPUT:-
+hello
+5
