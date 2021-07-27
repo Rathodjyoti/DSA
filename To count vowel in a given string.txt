@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+   char s[20];
+   char v[]="aeiouAEIOU";
+   int i,j,count=0;
+   printf("Enter your string\n");
+   gets(s);
+   for(i=0;s[i];i++)
+   {
+       for(j=0;v[j];j++){
+           if(s[i]==v[j])
+           {
+               count++;
+               break;
+           }
+       }
+   }
+   printf("vowel  of %s is %d",s,count);
+    return 0;
+}
+
+OUTPUT:-
+Enter your string
+helloieu
+vowel  of helloieu is 5
